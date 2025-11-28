@@ -1,0 +1,147 @@
+.home-container {
+  background: linear-gradient(160deg, #000000, #0f2027, #1c1c1c);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0 5%;
+  flex-wrap: wrap;
+}
+
+.home-content {
+  flex: 1 1 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.home-content h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.highlight {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.typed-text {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--accent);
+  text-shadow: 0 0 10px rgba(255, 107, 0, 0.6);
+}
+
+.tagline {
+  max-width: 500px;
+  font-size: 1rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.button-group {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.home-image {
+  flex: 1 1 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 25px rgba(255, 107, 0, 0.5);
+  transition: all 0.4s ease;
+}
+
+.home-image img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 107, 0, 0.8);
+}
+
+.typed-cursor {
+  color: var(--accent);
+  font-weight: bold;
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+
+.social-icon {
+  color: rgba(255, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px) scale(1.2);
+}
+
+.social-linkedin:hover {
+  color: #0077b5;
+  filter: drop-shadow(0 5px 10px rgba(0, 119, 181, 0.4));
+}
+
+.social-github:hover {
+  color: #ffffff;
+  filter: drop-shadow(0 5px 10px rgba(255, 255, 255, 0.4));
+}
+
+.social-email:hover {
+  color: #ff6b00;
+  filter: drop-shadow(0 5px 10px rgba(255, 107, 0, 0.4));
+}
+
+@media (max-width: 992px) {
+  .home-container {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding: 60px 5%;
+  }
+
+  .home-content {
+    align-items: center;
+  }
+
+  .home-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .typed-text {
+    font-size: 1.4rem;
+  }
+
+  .tagline {
+    max-width: 90%;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .home-image img {
+    max-width: 280px;
+    margin: 2.5rem 0;
+  }
+}
+
+
