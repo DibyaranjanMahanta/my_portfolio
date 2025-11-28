@@ -8,8 +8,8 @@ export const projects = [
     description: "A fast and elegant portfolio built using React.js and Vite with reusable components, category-based skills, and polished UI animations.",
     image: proj2,
     tech: ["React", "CSS", "Vite"],
-    live: "https://portfolio.example.com",
-    code: "https://github.com/username/portfolio",
+    live: "https://dibyaranjan-portfolio.vercel.app/",
+    code: "https://github.com/DibyaranjanMahanta/my_portfolio",
   },
   {
     title: "Typing Speed Tests",
